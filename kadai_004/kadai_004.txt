@@ -1,0 +1,60 @@
+
+micky@Hiromi MINGW64 ~
+$ pwd
+/c/Users/micky
+
+micky@Hiromi MINGW64 ~
+$ mkdir git_challenge
+
+micky@Hiromi MINGW64 ~
+$ cd git_challenge
+
+micky@Hiromi MINGW64 ~/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/micky/git_challenge/.git/
+
+micky@Hiromi MINGW64 ~/git_challenge (main)
+$ git add hello_world
+fatal: pathspec 'hello_world' did not match any files
+
+micky@Hiromi MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+
+micky@Hiromi MINGW64 ~/git_challenge (main)
+$ git commmit -m "hello_world.txtを追加"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+micky@Hiromi MINGW64 ~/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+[main (root-commit) 1d6bf17] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+micky@Hiromi MINGW64 ~/git_challenge (main)
+$ git commit -m "日本語訳を追記"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+micky@Hiromi MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+
+micky@Hiromi MINGW64 ~/git_challenge (main)
+$ git commit -m "日本語訳を追記"
+[main 1ff84f4] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+micky@Hiromi MINGW64 ~/git_challenge (main)
+$ git log --oneline
+1ff84f4 (HEAD -> main) 日本語訳を追記
+1d6bf17 hello_world.txtを追加
+
+micky@Hiromi MINGW64 ~/git_challenge (main)
+$
